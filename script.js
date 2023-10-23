@@ -1,12 +1,9 @@
 //your JS code here. If required.
 const enterButton = document.getElementById("enterBtn");
-        const statusParagraph = document.getElementById("status");
-        const metaverseStatus = document.getElementById("h1-status");
+const status = document.getElementById("status");
+const h1 = document.getElementById("h1");
 
-        enterButton.addEventListener("click", function() {
-            // hiding the paragraph
-            statusParagraph.style.display = "none";
-            
-            // Displaying the h1 element
-            metaverseStatus.style.display = "block";
-        });
+enterButton.addEventListener("click", function() {
+    status.textContent = "Entered Metaverse";
+	h1.appendChild(status);
+});
